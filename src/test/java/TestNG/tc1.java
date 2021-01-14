@@ -12,8 +12,8 @@ public class tc1 {
 
    		@BeforeMethod
 		public void launch() {
-		  String chromeDriverPath = “/usr/bin/chromedriver”;
-		  System.setProperty(“webdriver.chrome.driver”, chromeDriverPath);
+		  String chromeDriverPath = "/usr/bin/chromedriver";
+		  System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 		  WebDriver driver = new ChromeDriver();
 		  
 		  driver.manage().window().maximize();
