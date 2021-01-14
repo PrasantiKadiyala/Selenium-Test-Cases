@@ -12,7 +12,7 @@ public class tc1 {
 
    		@BeforeMethod
 		public void launch() {
-		  public String chromeDriverPath = “/usr/bin/chromedriver”;
+		  String chromeDriverPath = “/usr/bin/chromedriver”;
 		  System.setProperty(“webdriver.chrome.driver”, chromeDriverPath);
 		  WebDriver driver = new ChromeDriver();
 		  
