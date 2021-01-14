@@ -12,11 +12,13 @@ public class tc1 {
 
    		@BeforeMethod
 		public void launch() {
-		  System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-		  driver = new ChromeDriver();
+		  public String chromeDriverPath = “/usr/bin/chromedriver”;
+		  System.setProperty(“webdriver.chrome.driver”, chromeDriverPath);
+		  WebDriver driver = new ChromeDriver();
+		  
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		  driver.get("http://15.207.98.49:32768/addressbook/");
+		  driver.get("http://18.223.210.194:32771/addressbook/");
 		
 		}
 		
