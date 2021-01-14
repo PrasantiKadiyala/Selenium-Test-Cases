@@ -28,7 +28,7 @@ public class tc1 {
 	}
 
 	@Test
-	public void verfiy() {
+	public void verfiy() throws MalformedURLException{
 
 		driver.findElement(By.xpath("//div[@class='v-button v-widget']")).click();
 		driver.findElement(By.id("gwt-uid-5")).sendKeys("Edureka");
