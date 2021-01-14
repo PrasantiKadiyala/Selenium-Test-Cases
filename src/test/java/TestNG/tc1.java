@@ -13,12 +13,13 @@ public class tc1 {
 
    		@BeforeMethod
 		public void launch() {
-   		  String chromeDriverPath = "/usr/bin/chromedriver";
+   		 String chromeDriverPath = "/usr/bin/chromedriver";
   		  System.setProperty("webdriver.chrome.driver", chromeDriverPath);
   		  ChromeOptions options = new ChromeOptions();
+  		  options.setBinary(chromeDriverPath);
   		  options.setHeadless(true);
   		  WebDriver driver = new ChromeDriver(
-  				  new ChromeOptions());
+  				  options);
   		  
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
