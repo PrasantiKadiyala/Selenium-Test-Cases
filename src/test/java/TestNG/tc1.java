@@ -18,7 +18,7 @@ public class tc1 {
 	WebDriver driver;
 
 	@BeforeMethod
-	public void launch() {
+	public void launch() throws MalformedURLException{
 		new DesiredCapabilities();
 		URL serverurl = new URL("http://localhost:9515");
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
@@ -28,7 +28,7 @@ public class tc1 {
 	}
 
 	@Test
-	public void verfiy() throws MalformedURLException{
+	public void verfiy() {
 
 		driver.findElement(By.xpath("//div[@class='v-button v-widget']")).click();
 		driver.findElement(By.id("gwt-uid-5")).sendKeys("Edureka");
