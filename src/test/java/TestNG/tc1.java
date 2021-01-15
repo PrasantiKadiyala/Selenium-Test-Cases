@@ -13,7 +13,7 @@ public class tc1 {
 		
 	  @Test
 		
-	 public static void main(String []args) throws MalformedURLException{
+	 public void verify() throws MalformedURLException{
 	        new DesiredCapabilities();
 	            URL serverurl = new URL("http://localhost:9515");
 	            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
